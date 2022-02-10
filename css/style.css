@@ -147,7 +147,7 @@ margin-top: 0;
 
 }
 #botonRules{
-background-image: url("/imgDemon/boton.png");
+background-image: url("./imgDemon/boton.png");
 color: #fff;
 position: absolute;
 background-position: center;
