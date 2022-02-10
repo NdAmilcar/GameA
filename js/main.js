@@ -13,7 +13,8 @@ function iniciarJuego(){
     let boxes = document.querySelector(".boxes");
     div.id = "startDiv";
     div.style.width = "100%";
-    div.style.height = "100%";
+    div.style.height = "120%";
+    div.style.marginTop = "0";
     div.style.backgroundColor = "black";
     div.style.position = "absolute";
     div.style.zIndex = "99";
