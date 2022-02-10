@@ -32,6 +32,8 @@ export class Ahorcado {
            alert("¡Estás muerto!");
            alert("La palabra era: " + P);
             this.cambiarFondo(this.vivo);
+            this.botonReload();
+
         }
         this.dibujar();
     }
