@@ -11,9 +11,9 @@ export class Ahorcado {
     cambiarFondo(){
         let contenedor = document.querySelector("body");
         if(this.vivo != false){
-        contenedor.src = "url(./imgDemon/cabania.gif)";
+        contenedor.style.backgroundImage = "url(./imgDemon/cabania.gif)";
         }else if(this.vivo == false){
-            contenedor.src = "url(./imgDemon/fire2.gif)";
+        contenedor.style.backgroundImage = "url(./imgDemon/fire2.gif)";
         }
     }
     //---------------------------------------------------------------------------------------------------------------------
