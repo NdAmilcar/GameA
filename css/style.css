@@ -83,18 +83,6 @@ color: #fff;
 text-align: left;
 margin-top: 0px;
 }
-/* @media (max-width: 768px) {
-.container {
-width: 50%;
-margin: auto;
-}
-#boton {
-width: 100%;
-}
-.personaje {
-margin-top: 50%;
-}
-} */
 
 /* ----------------GRID------------------------ */
 .boxes {
