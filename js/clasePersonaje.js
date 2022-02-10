@@ -11,16 +11,16 @@ export class Ahorcado {
     cambiarFondo(){
         let contenedor = document.querySelector("body");
         if(this.vivo != false){
-        contenedor.style.backgroundImage = "url('./imgDemon/cabania.gif')";
+        contenedor.style.backgroundImage = "url(../imgDemon/cabania.gif)";
         }else if(this.vivo == false){
-            contenedor.style.backgroundImage = "url('./imgDemon/fire2.gif')";
+            contenedor.style.backgroundImage = "url(../imgDemon/fire2.gif)";
         }
     }
     //---------------------------------------------------------------------------------------------------------------------
 
     dibujar() {
     
-        document.getElementById("img").src = "./imgDemon/demon-" + this.intentos + ".png";
+        document.getElementById("img").src = "../imgDemon/demon-" + this.intentos + ".png";
         this.cambiarFondo();
     }
     //---------------------------------------------------------------------------------------------------------------------
@@ -95,7 +95,7 @@ export class Ahorcado {
         palabraInput.innerHTML = texto;
         if(texto == palabra ){
             alert("¡Ganaste!");
-            document.getElementById("img").src = "./imgDemon/demon-0.png";
+            document.getElementById("img").src = "../imgDemon/demon-0.png";
             this.botonReload();
             this.vivo = true;
         }
