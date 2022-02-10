@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>A_H_O_R_C_A_D_O</title>
+
+</head>
+<body>
+<div class="boxes">
+           <!-- ----------------------------------------------------- -->
+
+    <button id="botonRules">Reglas</button>
+
+
+<div id="rules" style="display: none;">
+    <h5>Back</h5>
+    <h1>Reglas del juego: </h1>
+
+        <br>
+        <h1>La palabra queda guardada de manera "local"</h1>
+        <br>
+        <h1>Dicha palabra será convertida a mayusculas de manera automática, pero en el juego solo se permitirán MAYUSCULAS</h1>
+        <br>
+        <h1>No es obligatorio poner una pista, es solo para ayudar a la memoria</h1>
+        <br>
+        <h1>Cada vez que se escriba una letra, será visible para recordar las letras ya utilizadas</h1>
+        <br>
+        <h1>- No deben se pueden utilizar letras con acentos ni caracteres especiales;</h1>
+        <br>
+        <h1>- Tienes 6 intentos por palabra</h1>
+        <br>
+        <h1>Good Luck!</h1>
+</div>
+       <!-- ----------------------------------------------------- -->
+
+<div class="container">
+    <p id="search">
+        Elige una letra:
+        <input maxlength="1" type="text" id="letra" />
+        <input type="button" id="boton" value="Boom!!" />
+    </p>
+</div>
+       <!-- ----------------------------------------------------- -->
+
+<div class="lista">Letras usadas: </div>
+
+       <!-- ----------------------------------------------------- -->
+
+<div class="cajaParaLasPalabras">
+    Palabra:
+    <input id="miPalabra" type="text">
+    <br>
+    Pista: 
+    <input id="miPista" type="text">
+</div>
+       <!-- ----------------------------------------------------- -->
+
+    <div class="personaje">
+        <h2 id="pista">_ _ _</h2>
+        <img id="img" width="300">
+    </div>
+</div>
+       <!-- ----------------------------------------------------- -->
+
+<script type="module" src="./js/main.js"></script>
+
+
+</body>
+</html>
+
+
+
+

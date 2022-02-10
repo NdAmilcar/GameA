@@ -1,0 +1,158 @@
+#boton {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#letra{
+    font-size: 20px;
+    width: 100px;
+    margin: auto;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+body{
+/* background url */
+    background-image: url("../imgDemon/fire2.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.container{
+    margin: auto;
+    margin-top: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    border-bottom: 2px solid #ff0000;
+}
+
+.lista{
+    max-height: 190px;
+    width: 25%;
+    position: absolute;
+    top: 85px;
+    right:0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    columns: 5;
+    border-top : 1px solid #fff;
+    padding: 10px;
+
+}
+li{
+  list-style: none;
+  padding: 10px;
+}
+#rules{
+position: absolute;
+top: 0;
+left: 0;
+width: 20%;
+height: 90%;
+background-color: rgba(0,0,0,0.5);
+color: #fff;
+text-align: center;
+padding-top: 3%;
+font-size: 20px;
+font-weight: bold;
+
+}
+/* ------------------------------------ */
+
+h1 {
+background-image: url("../imgDemon/fire3.gif");
+background-repeat: no-repeat;
+color: transparent;
+-moz-background-clip: text;
+-webkit-background-clip: text;
+font-size: 20px;
+line-height: 1;
+margin: 10px 0;
+border:1px solid #fff;
+}
+h5{
+color: #fff;
+text-align: left;
+margin-top: 0px;
+}
+/* @media (max-width: 768px) {
+.container {
+width: 50%;
+margin: auto;
+}
+#boton {
+width: 100%;
+}
+.personaje {
+margin-top: 50%;
+}
+} */
+
+/* ----------------GRID------------------------ */
+.boxes {
+height: 700px;
+display: grid;
+grid-template-areas:
+'menu header rig '
+'menu footer rig '
+'menu footer rig ';
+grid-gap: 10px;
+}
+#pista{
+color: #fff;
+margin-left: 25%;
+}
+#img{
+height: 350px;
+width: 350px;
+margin-left: 30%;
+}
+.container { grid-area: header; }
+#rules { grid-area: menu; }
+.personaje { grid-area: footer; }
+.lista { grid-area: rig; }
+
+/* --------Media---------------- */
+@media screen and (max-width: 768px) {
+#rules{
+overflow-y: scroll;
+margin-top: 80px;
+width: 100%;
+}
+.lista{
+width: 100%;
+margin-top: 50px;
+}
+#botonRules{
+margin-top: 80px;
+}
+#img{
+height: 250px;
+width: 250px;
+margin-left: 30%;
+}
+.container{
+width: 100%;
+margin: auto;
+margin-top: 0;
+}
+
+}
+#botonRules{
+background-image: url(../imgDemon/boton.png);
+color: #fff;
+position: absolute;
+background-position: center;
+border-radius: 30%;
+font-size: 20px;
+text-align: center;
+/* font-family: 'roboto'; */
+}
