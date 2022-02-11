@@ -205,17 +205,17 @@ export class Ahorcado {
         let audio = document.getElementById("sound");
        
         if(cancion == "piedad1"){
-            audio.src = `../sonidos/${cancion}.mp3`;
+            audio.src = `./sonidos/${cancion}.mp3`;
         }else if(cancion == "piedad2"){
-            audio.src = `../sonidos/${cancion}.mp3`;
+            audio.src = `./sonidos/${cancion}.mp3`;
         }else if(cancion == "piedad3"){
-            audio.src = `../sonidos/piedadBucle.mp3`;
+            audio.src = `./sonidos/piedadBucle.mp3`;
         }else if(cancion == "piedad2-1"){
-            audio.src = `../sonidos/piedad2.mp3`;
+            audio.src = `./sonidos/piedad2.mp3`;
         }else if(cancion == "unasPalabras"){
-            audio.src = `../sonidos/${cancion}.mp3`;
+            audio.src = `./sonidos/${cancion}.mp3`;
         }else if(cancion == "libertad"){
-            audio.src = `../sonidos/${cancion}.mp3`;
+            audio.src = `./sonidos/${cancion}.mp3`;
             let audioInicioFondo = document.getElementById("fondo");
             audioInicioFondo.currentTime = 0;
         }
