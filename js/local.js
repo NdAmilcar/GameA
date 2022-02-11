@@ -1,5 +1,7 @@
 import {iniciar} from "./iniciarClase.js";
 import { botonReglas } from "./reglas.js";
+import { sonidoInicioFondo } from "./sonidoInicioFondo.js";
+
 
 export function guardarLocalStorage(palabra,palabraNueva,pista){
     let palabras = {
@@ -60,6 +62,8 @@ export function cajaParaLasPalabras(div){
         div.style.display = "none";
         setTimeout(function(){
         iniciar();
+        sonidoInicioFondo();
+
         console.log('%c Good Game! ', 'background: #232; color: #bada55');
         }, 1000);
     });
