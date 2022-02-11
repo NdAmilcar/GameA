@@ -33,9 +33,25 @@ export class Ahorcado {
            alert("La palabra era: " + P);
             this.botonReload();
             this.cambiarFondo(this.vivo);
-            
-
         }
+          console.log(this.intentos);
+        if(this.intentos == 1){
+            this.sonido("piedad1");
+
+        }else if(this.intentos == 2){
+            this.sonido("piedad2");
+           }
+           else if(this.intentos == 3){
+            this.sonido("piedad3");
+           }
+           else if(this.intentos == 4){
+            this.sonido("piedad2-1");
+           }else if(this.intentos == 5){
+            this.sonido("unasPalabras");
+              }else if(this.intentos == 6){
+            this.sonido("libertad");
+            }
+        
         this.dibujar();
     }
     //---------------------------------------------------------------------------------------------------------------------
@@ -169,5 +185,44 @@ export class Ahorcado {
         });
     }
     //---------------------------------------------------------------------------------------------------------------------
+      /*sonido(sound){
+        let audio = document.getElementById("sound");
+        if(sound == "porQueLoHacemos"){
+            audio.src = "../sonidos/porQueLoHacemos.wav";
+        }else if(sound == "piedad3"){
+            audio.src = "../sonidos/piedad3.wav";
 
+        }else if(sound == "piedad2"){
+            audio.src = "../sonidos/piedad2.wav";
+        }else if(sound == "piedad1"){
+            audio.src = "../sonidos/piedad1.wav";
+        }
+        
+        audio.play();
+    }
+    */
+    sonido(cancion){
+        let audio = document.getElementById("sound");
+       
+        if(cancion == "piedad1"){
+            audio.src = `../sonidos/${cancion}.mp3`;
+        }else if(cancion == "piedad2"){
+            audio.src = `../sonidos/${cancion}.mp3`;
+        }else if(cancion == "piedad3"){
+            audio.src = `../sonidos/piedadBucle.mp3`;
+        }else if(cancion == "piedad2-1"){
+            audio.src = `../sonidos/piedad2.mp3`;
+        }else if(cancion == "unasPalabras"){
+            audio.src = `../sonidos/${cancion}.mp3`;
+        }else if(cancion == "libertad"){
+            audio.src = `../sonidos/${cancion}.mp3`;
+            let audioInicioFondo = document.getElementById("fondo");
+            audioInicioFondo.currentTime = 0;
+        }
+        
+        audio.play();
+      
+       
+
+    }
 }
